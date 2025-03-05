@@ -7,7 +7,7 @@ function permutationSort(a) {
         if (a[i] != a[0]) {isHomogeneous = false;}
     }    
     if (isHomogeneous == true) {return 0;}
-    var sortValue = [false, 0]; // including original as permutation, change 0 to -1 to not
+    var sortValue = [false, -1]; // including original as permutation, change 0 to -1 to not
     var tmpArray = new Array(a.length);
     permutations(a, 0, sortValue, tmpArray);
     arr = tmpArray;
