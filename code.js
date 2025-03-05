@@ -2,7 +2,7 @@ function permutationSort(a) {
     if (a.length == 0 || a.length == 1) {
         return 0;
     }
-    var sortValue = [false, 0];
+    var sortValue = [false, 0]; // including original as permutation, change 0 to -1 to not
     var tmpArray = new Array(a.length);
     permutations(a, 0, sortValue, tmpArray);
     arr = tmpArray;
