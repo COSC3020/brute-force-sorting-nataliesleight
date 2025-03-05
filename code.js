@@ -3,7 +3,7 @@ function permutationSort(a) {
         return 0;
     }
     var isHomogeneous = true;
-    for (var i = 0; i < a.length - 1; i++) {
+    for (var i = 0; i < a.length; i++) {
         if (a[i] != a[0]) {isHomogeneous = false;}
     }    
     if (isHomogeneous == true) {return 0;}
